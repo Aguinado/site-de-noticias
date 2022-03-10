@@ -1,0 +1,388 @@
+/*Abixo configuração da estrutura do site*/
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #fff url(imagens/fundo.png) repeat-x;
+	/*O esquema para utilizar esta imagem foi usar uma repetição no eixo x (horizontal) 
+	dando uma impressão de que a imagem é continua*/
+	/*imagens criadas com um loop poder ser usadas em body utilizando uma seguência */
+}
+
+/*CRIAÇÃO DO CONATINER*/
+#container{
+	/*a largura deste container é de 750px*/
+	width:750px;
+	/*margin usado para centralizar o conteúdo com top de 0 e um auto para centralizar*/
+	margin: 0 auto;
+	
+}
+
+/*CRIAÇÃO DA TOPO*/
+#topo{
+	/*delimitando a altura do topo*/
+	height:150px;
+	/*O esquema para utilizar esta imagem foi não ser repetida mas colocada a direita*/
+	background: url(imagens/detalhe-topo.png) no-repeat right top;
+	/*Usao para almetar o espaçamento entre a imagem do Brasil*/
+	padding-top: 25px;
+	/*usado somente para observações*/
+	/*border: 1px solid red;*/
+}
+
+/*CRIAÇÃO DA LOGO*/
+.logo{
+	/*largura da logo*/
+	width: 152px;
+	/*altura da logo*/
+	height: 66px;
+	/*OBS esse dois parametros tem as medidas da imagem em questão*/
+	background: url(imagens/logo.png) no-repeat center;
+	/*Esta função de texto foi usada para esconder o texto caso o css não carregue*/
+	text-indent: -3000px;
+}
+
+/*CRIAÇÂO DA BARRA DE NAVEÇÃO*/
+/*Começando a remover as formatações padrões da 'ul'*/
+/*OBS sempre será feita primeiro uma formatação dentro de 
+uma ul para a criação de menus dentro de sites*/
+ul{
+	/*Usado para criar espaço ao redor do elementos, externo*/
+	margin: 0;
+	/*Usado para criar espaço ao redor do elementos, interno*/
+	padding: 0;
+	/*tirar simbolos da lista  não enumerada*/
+	list-style: none;
+}
+
+/*Utilizando um id para diferenciar outras barras de navegação*/
+#topo ul{
+	/*usado para criar uma elevação superior de 30px*/
+	margin-top: 30px;
+	/*float usado para corigir e recuperar o background*/
+	float: left;
+	background: #b10333;
+}
+/*Utilizando um id para diferenciar outras barras de navegação*/
+#topo ul li{
+	/*Usado para descolar para esquerda*/
+	float: left;
+}
+/*Utilizando um id para diferenciar outras barras de navegação*/
+#topo ul a {
+	/*modificação do tamanho fonte*/
+	font-size: 0.9em;
+	/*Display usado para modificar propriedade inline*/
+	display: block;
+	/*padding com função de criar espaço superior e inferior interno*/
+	padding: 0.5em 1.5em;
+	/*Almeta a altura da linha*/
+	line-height: 2.1em;
+	/*remover os efeitos do link, linha a baixo do link*/
+	text-decoration: none;
+	color: white;
+	background: url(imagens/divisor.png) no-repeat left center;
+}
+/*Utilizando um id para diferenciar outras barras de navegação*/
+#topo ul .primeiro a {
+	background: none;
+}
+/*Utilizando um id para diferenciar outras barras de navegação*/
+#topo ul a:hover{
+	color:#69001d;
+}
+/*FINAL de Criação de TOPO e BARRA DE NAVEGAÇÃO*/
+
+/*COMEÇO de criação de layout de três colunas*/
+#conteudo{
+	/*margin usado para empurar o conteúdo, conteúdo entrando em conflito 
+	com a imagem do background body*/
+	margin-top: 60px; 
+}
+
+/*OBS a largura do container e 750px então tenha em mente que sempre que 
+for criar uma página deve-se saber qual vai ser o tamanho do seu container*/
+
+/*270px para este conteúdo 15px de espaçamento entre os containers*/
+/*Modificação tres-colunas, porque nem todas as divs das paginas do site terão a mesma tamanho*/
+#tres-colunas #primario{
+	/*270px para este conteúdo 15px de espaçamento entre os containers*/
+	width: 270px;
+	/*Elemento importante para flotuação do conteúdo*/
+	float: left;
+	/*OBS todos os comprimentos foram criados pelo professor, ou seja, um aluno com pouco 
+	conhecimento não conseguiria fazer sozinho*/
+	/*superior,externo 0*/
+	margin-top: 0;
+	/*direito,externo 0*/
+	margin-right: 0;
+	/*inferior, externo 20px*/
+	margin-bottom: 20px;
+	/*esquerdo, externo 195px(180px o container mais o espaço de 15px = 195px*/
+	margin-left: 195px;
+}
+
+/*Modificação duas-colunas, porque nem todas as divs das paginas do site terão a mesma tamanho*/
+#duas-colunas #primario{
+	/*555px para este conteúdo 15px de espaçamento entre a lateral*/
+	width: 555px;
+	/*Elemento importante para flotuação do conteúdo*/
+	float: left;
+	/*OBS todos os comprimentos foram criados pelo professor, ou seja, um aluno com pouco 
+	conhecimento não conseguiria fazer sozinho*/
+	/*superior,externo 0*/
+	margin-top: 0;
+	/*direito,externo 0*/
+	margin-right: 0;
+	/*inferior, externo 20px*/
+	margin-bottom: 20px;
+	/*esquerdo, externo 195px(180px o container mais o espaço de 15px = 195px*/
+	margin-left: 195px;
+}
+
+/*Modificação uma-coluna, porque nem todas as divs das paginas do site terão a mesma tamanho*/
+#uma-coluna{
+	/*750px para este conteúdo*/
+	width: 750px;
+	/*Elemento importante para flotuação do conteúdo*/
+	
+	/*OBS todos os comprimentos foram criados pelo professor, ou seja, um aluno com pouco 
+	conhecimento não conseguiria fazer sozinho*/
+	/*superior,externo 0*/
+	margin-top: 0;
+	/*direito,externo 0*/
+	margin-right: 0;
+	/*inferior, externo 20px*/
+	margin-bottom: 20px;
+}
+
+#primario{
+	/*270px para este conteúdo 15px de espaçamento entre os containers*/
+	width: 270px;
+	/*Elemento importante para flotuação do conteúdo*/
+	float: left;
+	/*OBS todos os comprimentos foram criados pelo professor, ou seja, um aluno com pouco 
+	conhecimento não conseguiria fazer sozinho*/
+	/*superior,externo 0*/
+	margin-top: 0;
+	/*direito,externo 0*/
+	margin-right: 0;
+	/*inferior, externo 20px*/
+	margin-bottom: 20px;
+	/*esquerdo, externo 195px(180px o container mais o espaço de 15px = 195px*/
+	margin-left: 195px;
+}
+
+/*270px para este conteúdo 15px de espaçamento entre os containers*/
+#secundario{
+	/*270px para este conteúdo 15px de espaçamento entre os containers*/
+	width: 270px;
+	/*Elemento importante para flotuação do conteúdo*/
+	float: left;
+	/*superior,externo 0*/
+	margin-top: 0;
+	/*direito,externo 0*/
+	margin-right: 0;
+	/*inferior, externo 20px*/
+	margin-bottom: 20px;
+	/*esquerdo, espaçamento 15px*/
+	margin-left: 15px;
+}
+
+/*180px para este conteúdo*/
+#lateral{
+	/*180px para este conteúdo*/
+	width: 180px;
+	/*Elemento importante para flotuação do conteúdo*/
+	float: left;
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:20px;
+	margin-left:-750px;
+}
+/*FINAL de criação do layout e colunas*/
+
+/*INICIO criação div 'caixa' e div 'caixa-conteudo'*/
+.caixa{
+	background: #f3f3f3 url(imagens/fundo-caixa.png) ;
+	margin-top: 10px;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 0;
+	/*padding (interno) com função de criar espaço entre as letra*/
+	padding: 5px;
+}
+
+h2{
+	font-size: 1.1em;
+	/*Mesma cor do background de body*/
+	background: #294c71;
+	color: white;
+	/*padding (interno) com função de criar espaço entre as letra*/
+	padding: 5px;
+	text-align: center;
+}
+
+.caixa-conteudo{
+	background: #fff;
+	padding: 5px;
+	margin-top: 5px;
+}
+/*FINAL criação div 'caixa' e div 'caixa-conteudo'*/
+
+/*INICIO Formatação menu lateral*/
+#lateral ul a{
+	/*modificação tamanho da fonte*/
+	font-size: 0,9em;
+	/*espaçamento interno*/
+	padding: 3px;
+	/*configuração para formatação de link, já que o link é um elemento inline*/
+	display: block;
+	/*altura do texto*/
+	line-height: 30px;
+	/*cor do texto*/
+	color: #000;
+	/*modificação para retirar underline*/
+	text-decoration: none;
+	/*borda inferior*/
+	border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover{
+	color: #a1a1a1;
+	background: #f9f9f9 url(imagens/marcador.png) no-repeat left center;
+	padding-left: 20px;
+}
+
+label{
+	/*configuração de elemento tipo inline*/
+	display: block;
+	/*O cursor do mause se torna um ponteiro*/
+	cursor: pointer;
+}
+
+#ajuste-imput input{
+	font-size: 0.9em;
+	background-color: #fff;
+	width: 148px;
+}
+
+input{
+	padding: 5px;
+	font-size: 0.9em;
+	background-color: #fff;
+}
+
+input.submit{
+	width: 80px;
+	color: #fff;
+	background-color: #b10333;
+	border: 2px solid #870529;
+}
+/*FINAL Formatação menu lateral*/
+
+/*INICIO formatação imagem*/
+img{
+	border: 2px solid #dfdfdf;
+}
+img.imagem-principal{
+	width: 98%;
+	border: 3px solid #dfdfdf;
+}
+/*FINAL formatação imagem*/
+
+/*INICIO formatação h3*/
+.destaque h3{
+	/*Transforma texte em caixa alta*/
+	text-transform: uppercase;
+	/*texto é um elemento do tipo block*/
+	display: inline;
+	/*tamanho da fonte*/
+	font-size: 0.8em;
+	/*espaçamento interno*/
+	padding: 3px;
+	background: #870529;
+	color: #fff;
+}
+
+.entrevista h3{
+	/*Transforma texte em caixa alta*/
+	text-transform: uppercase;
+	/*texto é um elemento do tipo block*/
+	display: inline;
+	/*tamanho da fonte*/
+	font-size: 0.8em;
+	/*espaçamento interno*/
+	padding: 3px;
+	background: #de003e;
+}
+
+/*INICIO Formatação de DIV mundo abaixo de "NOVA LEGISLAÇÃO"*/
+
+#lista-noticias li{
+	padding: 2px;
+	border-bottom: 1px solid #ccc;
+	height: 63px;
+}
+
+#lista-noticias li a img{
+	float: left;
+	margin: 5px;
+}
+
+#lista-noticias li a{
+	text-decoration: none;
+}
+
+#lista-noticias li a h3{
+	font-size: 0.8em;
+	padding: 0;
+	color: #3e7ab9;
+}
+
+#lista-noticias li a p{
+	font-size: 0.7em;
+}
+
+#lista-noticias li:hover{
+	background: #eee;
+	cursor: pointer;
+}
+
+/*FINAL Formatação de DIV mundo abaixo de "NOVA LEGISLAÇÃO"*/
+
+h3{
+	/*Transforma texte em caixa alta*/
+	text-transform: uppercase;
+	/*texto é um elemento do tipo block*/
+	display: inline;
+	/*tamanho da fonte*/
+	font-size: 0.8em;
+	/*espaçamento interno*/
+	padding: 3px;
+}
+/*FINAL formatação h3*/
+
+/*COMEÇO de criação rodape*/
+#container-rodape{
+	/*Mesma cor do background de body*/
+	background: #294c71;
+	/*Usao para almetar o espaçamento interno do container*/
+	padding: 20px;
+	/*elemento importante para limpar o fluxo flutuante*/
+	clear: both;
+}
+
+#rodape{
+	color: white;
+	text-align: center;
+	/*elemento importante para limpar o fluxo flutuante*/
+	clear: both;
+	/*a largura deste container é de 750px*/
+	width:750px;
+	/*margin usado para centralizar o conteúdo com top de 0 e um auto para centralizar*/
+	margin: 0 auto;
+}
+/*FINAL de criação rodape*/

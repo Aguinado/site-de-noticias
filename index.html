@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		
+		<title>Notícias Cidade</title>
+
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	</head>
+
+	<!--Aqui no body foi colocado um id porque nem todas as divs de conteúdo das paginas do site terão o mesmo tamanho-->
+	<body>
+		
+		<!-- INICIO do container -->
+		<div id="container">
+
+			<!--INICIO dentro de topo será construido o logo e o menu de navegação -->
+			<div id="topo">
+
+				<!-- classe usada em h1 -->
+				<h1 class="logo">Notícias Cidade</h1>
+				<!-- OBS exsitem diversas maneiras de criar uma logo exemplo, usando uma imagem ou H para criar uma logo -->
+				
+				<!-- Criando o menu de navegação horizontal-->
+				<ul id="navegacao">
+
+					<li class="primeiro"><a href="index.html">Home</a></li>
+
+					<li><a href="brasil.html">Brasil</a></li>
+
+					<li><a href="internacional.html">Internacional</a></li>
+
+					<li><a href="economia.html">Economia</a></li>
+
+					<li><a href="saude.html">Saúde</a></li>
+
+					<li><a href="ciencia.html">Ciência</a></li>
+
+					<li><a href="fotos.html">Fotos</a></li>
+
+				</ul>
+			</div>
+			<!-- FINAL -->
+
+			<!-- OBS sempre que for criar uma nova barra de navegação ou conteúdo é necessario criar uma nova div fora do topo da pagina -->
+
+			<!--INICIO de criação de conteúdo -->
+			<div id="conteudo">
+				
+				<!-- Por questões de acessibilidade é interessante usar a primeira div como conteúdo primário -->
+				<div id="primario">
+
+					<!--Div com id criado para as modificações-->
+					<!-- Abaixo existem duas classe "caixa" e "destaque" -->
+					<div class="caixa destaque">
+						
+						<h2>Destaque</h2>
+
+						<!--Div com id criado para as modificações-->
+						<div class="caixa-conteudo">
+							
+							<h3>Nova legislação</h3>
+
+							<!-- imagem conteúdo primario -->
+							<img class="imagem-principal" src="imagens/taxi.jpg" width="245px">
+
+							<p>
+								Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+							</p>
+
+							<a href="brasil.html">Leia mais!</a>
+
+						</div>
+
+					</div>
+
+					<!-- Conteúdo abaixo de Nova legislação-->
+					<div class="caixa">
+							
+						<h2>Mundo</h2>
+
+						<div class="caixa-conteudo">
+							
+							<!--Formatação de uma lista não ordenada-->
+							<ul id="lista-noticias">
+								
+								<li>
+									
+									<a href="">
+
+										<img src="imagens/tecnologia.jpg" width="80px"> 
+
+										<h3>Novas Tecnoligias!</h3>
+
+										<p>Lorem Ipsum é simplesmente um texto fictício</p>
+
+									</a>
+
+								</li>
+
+								<li>
+									
+									<a href="">
+
+										<img src="imagens/tecnologia.jpg" width="80px">
+
+										<h3>Novas Tecnologias</h3>
+
+										<p>Lorem Ipsum é simplesmente um texto fictício</p>
+
+									</a>
+
+								</li>
+
+								<li>
+									
+									<a href="">
+										
+										<img src="imagens/tecnologia.jpg" width="80px">
+
+										<h3>Novas Tecnologias</h3>
+
+										<p>Lorem Ipsum é simplesmente um texto fictício</p>
+
+									</a>
+
+								</li>
+
+							</ul>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div id="secundario">
+					
+					<div class="caixa entrevista">
+						
+						<h2>Útimas entrevistas</h2>
+
+						<div class="caixa-conteudo">
+							
+							<h3>Ultimas notícias com felipe silva</h3>
+
+							<img class="imagem-principal" src="imagens/doutor.jpg" width="245px">
+
+							<p>							
+								Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+							</p>
+
+							<a href="fotos.html">Leia mais!</a>
+
+						</div>
+
+					</div>
+
+					<!-- Conteúdo abaixo de ULTIMAS ENTREVISTAS-->
+					<div class="caixa">
+							
+						<h2>Noticias Recentes</h2>
+
+						<div class="caixa-conteudo">
+								
+							<!--Formatação de uma lista não ordenada-->
+							<ul id="lista-noticias">
+								
+								<li>
+									
+									<a href="">
+
+										<img src="imagens/tecnologia.jpg" width="80px"> 
+
+										<h3>Novas Tecnoligias!</h3>
+
+										<p>Lorem Ipsum é simplesmente um texto fictício</p>
+
+									</a>
+
+								</li>
+
+								<li>
+									
+									<a href="">
+
+										<img src="imagens/tecnologia.jpg" width="80px">
+
+										<h3>Novas Tecnologias</h3>
+
+										<p>Lorem Ipsum é simplesmente um texto fictício</p>
+
+									</a>
+
+								</li>
+
+								<li>
+									
+									<a href="">
+										
+										<img src="imagens/tecnologia.jpg" width="80px">
+
+										<h3>Novas Tecnologias</h3>
+
+										<p>Lorem Ipsum é simplesmente um texto fictício</p>
+
+									</a>
+
+								</li>
+
+							</ul>
+
+						</div>
+						
+					</div>
+
+				</div>
+
+				<!--INICIO barra de navegação vertical-->
+				<div id="lateral">
+
+					<!--Div com id criado para as modificações-->
+					<div class="caixa">
+
+						<h2>Entrevistas</h2>
+						 
+						<!--Div com id criado para as modificações-->
+						<div class="caixa-conteudo">
+
+							<ul>
+
+								<li><a href="jose-almeida.html">José Almeida</a></li>
+
+								<li><a href="felipe-silva.html">Felipe Silva</a></li>
+
+								<li><a href="renato-rodrigues.html">Renato Rodrigues</a></li>
+
+								<li><a href="abelardo-silveira.html">Abelardo Silveira</a></li>
+
+								<li><a href="andre-carlos.html">André Carlos</a></li>
+
+								<li><a href="marcio-mello.html">Márcio Mello</a></li>
+
+								<li><a href="joao-pedro.html">João Pedro</a></li>
+
+								<li><a href="fernando-weiss.html">Fernando Weiss</a></li>
+
+							</ul>
+
+						</div>
+
+					</div>
+
+					<!-- INICIO news letter -->
+
+					<!--Div com id criado para as modificações-->
+					<div class="caixa">
+
+						<h2>News</h2>
+						 
+						<!--Div com id criado para as modificações-->
+						<div class="caixa-conteudo">					
+
+							<!-- Tag para a criação de formulário -->
+							<form>
+								
+								<!-- Div para a caixa de texto email -->
+								<div id="ajuste-imput">
+
+									<!-- deixa um texto acima de form -->
+									<label for="email">Email:</label>
+
+									<!-- id usado para um possível leitor texto-->
+									<!-- placeholder tem deixa um pequeno texto na caixa do input -->
+									<input type="text" name="email" id="email" placeholder="E-mail">
+
+								</div>	
+
+								<!--Div para o envio de dados email -->
+								<div>
+									<!--  Submit, função de criar uma pequena caixa de envio de dados -->
+									<!-- value tem a função de deixar um valor de texto escrito no botão -->
+									<input class="submit" type="submit" value="Cadastrar">
+
+								</div>
+
+							</form>
+							 
+						</div>
+
+					</div>		
+
+					<!-- FINAL news letter -->
+
+					</div>
+
+				</div>
+				<!--FINAL barra de navegação vertical-->
+
+			</div>
+			<!--FINAL de criação de conteúdo -->
+
+		</div>
+		<!-- FINAL do container -->
+
+		<div id="container-rodape">
+
+			<div id="rodape">&copy; Copyright 2000-2018 Notícias cidade</div>
+		
+		</div>
+
+	</body>
+
+</html>

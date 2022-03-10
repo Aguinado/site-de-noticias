@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		
+		<title>Notícias Cidade</title>
+
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	</head>
+
+	<!--Aqui no body foi colocado um id porque nem todas as divs de conteúdo das paginas do site terão o mesmo tamanho-->
+	<body id="tres-colunas">
+		
+		<!-- INICIO do container -->
+		<div id="container">
+
+			<!--INICIO dentro de topo será construido o logo e o menu de navegação -->
+			<div id="topo">
+
+				<!-- classe usada em h1 -->
+				<h1 class="logo">Notícias Cidade</h1>
+				<!-- OBS exsitem diversas maneiras de criar uma logo exemplo, usando uma imagem ou H para criar uma logo -->
+				
+				<!-- Criando o menu de navegação horizontal-->
+				<ul id="navegacao">
+
+					<li class="primeiro"><a href="index.html">Home</a></li>
+
+					<li><a href="brasil.html">Brasil</a></li>
+
+					<li><a href="internacional.html">Internacional</a></li>
+
+					<li><a href="economia.html">Economia</a></li>
+
+					<li><a href="saude.html">Saúde</a></li>
+
+					<li><a href="ciencia.html">Ciência</a></li>
+
+					<li><a href="fotos.html">Fotos</a></li>
+
+				</ul>
+			</div>
+			<!-- FINAL -->
+
+			<!-- OBS sempre que for criar uma nova barra de navegação ou conteúdo é necessario criar uma nova div fora do topo da pagina -->
+
+			<!--INICIO de criação de conteúdo -->
+			<div id="conteudo">
+				
+				<!-- Por questões de acessibilidade é interessante usar a primeira div como conteúdo primário -->
+				<div id="primario">Primário</div>
+
+				<div id="secundario">Secundário</div>
+
+				<div id="lateral">Lateral</div>
+
+			</div>
+			<!--FINAL de criação de conteúdo -->
+
+		</div>
+		<!-- FINAL do container -->
+		<div id="container-rodape">
+
+			<div id="rodape">&copy; Copyright 2000-2018 Notícias cidade</div>
+		
+		</div>
+
+	</body>
+
+</html>
